@@ -57,7 +57,7 @@ class weather(object):
     pressure = data.get('main').get('pressure')
     humidity = data.get('main').get('humidity')
     windspeed = data.get('wind').get('speed')
-    windDegree = data.get('deg')
+    windDegree = data.get('wind').get('deg')
     sunrise = time_converter(data.get('sys').get('sunrise'))
     sunset = time_converter(data.get('sys').get('sunset'))
     timeUpdate = time_converter(data.get('dt'))
